@@ -44,7 +44,7 @@ export function LiquidButton({
       liquidbuttonVariants({ variant, size, className })
     ),
     ...props,
-  } as any;
+  } as Record<string, unknown>;
 
   if (href) {
     return (

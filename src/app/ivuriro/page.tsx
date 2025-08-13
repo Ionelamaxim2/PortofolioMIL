@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { Gauge, Accessibility, ShieldCheck, Search } from "lucide-react";
+import Link from "next/link";
 
 export default function IVURIROPage() {
   return (
@@ -12,11 +13,11 @@ export default function IVURIROPage() {
           <p className="text-sm text-white/70 small-font flex-1 md:flex-initial">
             Presentation website summary
           </p>
-          <a href="/" className="inline-block">
+          <Link href="/" className="inline-block">
             <span className="inline-flex items-center gap-2 glass rounded-full px-4 py-2 text-sm">
               ← Go back
             </span>
-          </a>
+          </Link>
         </div>
       </header>
 
