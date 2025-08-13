@@ -222,7 +222,7 @@ export default function Home() {
                   {/* Laptop */}
                   <div className="absolute right-0 bottom-0 h-full w-[72%]">
                     <Image
-                      src="/clinicalaptop1.webp"
+                      src="/clinicalaptop10.webp"
                       alt="Clinic laptop"
                       fill
                       className="object-contain"

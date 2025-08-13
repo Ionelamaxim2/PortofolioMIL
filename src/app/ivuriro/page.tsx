@@ -26,7 +26,7 @@ export default function IVURIROPage() {
         <div className="order-2 md:order-1 grid grid-cols-2 gap-4 md:gap-5">
           <div className="col-span-2 relative rounded-2xl overflow-hidden border border-[--color-border] bg-[--color-muted] aspect-[16/9]">
             <Image
-              src="/clinicalaptop1.webp"
+              src="/clinicalaptop10.webp"
               alt="Clinic laptop 1"
               fill
               className="object-contain"
