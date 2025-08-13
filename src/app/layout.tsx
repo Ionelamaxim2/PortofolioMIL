@@ -60,7 +60,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/preview.png",
+        url: "/preview.png?v=2",
         width: 1200,
         height: 630,
         alt: "Portfolio preview",
@@ -72,7 +72,7 @@ export const metadata: Metadata = {
     title: "Maxim Ionela — Portfolio",
     description:
       "Frontend developer crafting premium UI with Next.js, React and Tailwind CSS.",
-    images: ["/preview.png"],
+    images: ["/preview.png?v=2"],
   },
 };
 
