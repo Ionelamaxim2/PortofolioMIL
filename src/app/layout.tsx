@@ -40,13 +40,13 @@ const smallFont = Roboto({
   weight: ["400", "500", "700"],
 });
 
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ||
+  "https://portofolio-maxim-ionela.onrender.com";
+
 export const metadata: Metadata = {
-  // Setează URL absolut pentru generarea corectă a linkurilor OG/Twitter
-  // Poți seta NEXT_PUBLIC_SITE_URL în Render (ex: https://portofoliomil.onrender.com)
-  metadataBase:
-    typeof process !== "undefined" && process.env.NEXT_PUBLIC_SITE_URL
-      ? new URL(process.env.NEXT_PUBLIC_SITE_URL as string)
-      : undefined,
+  // URL absolut pentru OG/Twitter
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Maxim Ionela — Portfolio",
     template: "%s — Maxim Ionela",
