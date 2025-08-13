@@ -41,6 +41,12 @@ const smallFont = Roboto({
 });
 
 export const metadata: Metadata = {
+  // Setează URL absolut pentru generarea corectă a linkurilor OG/Twitter
+  // Poți seta NEXT_PUBLIC_SITE_URL în Render (ex: https://portofoliomil.onrender.com)
+  metadataBase:
+    typeof process !== "undefined" && process.env.NEXT_PUBLIC_SITE_URL
+      ? new URL(process.env.NEXT_PUBLIC_SITE_URL as string)
+      : undefined,
   title: {
     default: "Maxim Ionela — Portfolio",
     template: "%s — Maxim Ionela",
@@ -52,14 +58,21 @@ export const metadata: Metadata = {
     description:
       "Frontend developer crafting premium UI with Next.js, React and Tailwind CSS.",
     type: "website",
-    // Intenționat fără imagini pentru a nu afișa thumbnail la share
+    images: [
+      {
+        url: "/preview.png",
+        width: 1200,
+        height: 630,
+        alt: "Portfolio preview",
+      },
+    ],
   },
   twitter: {
-    card: "summary",
+    card: "summary_large_image",
     title: "Maxim Ionela — Portfolio",
     description:
       "Frontend developer crafting premium UI with Next.js, React and Tailwind CSS.",
-    images: [],
+    images: ["/preview.png"],
   },
 };
 
