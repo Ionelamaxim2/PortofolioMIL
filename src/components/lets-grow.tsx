@@ -43,7 +43,7 @@ export default function LetsGrow() {
                 className="glass rounded-md p-3 block w-full overflow-hidden text-ellipsis whitespace-nowrap"
                 title="LinkedIn"
               >
-                LinkedIn
+                LinkedIn-Maxim Ionela
               </a>
             </div>
           </div>
