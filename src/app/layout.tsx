@@ -54,6 +54,7 @@ export const metadata: Metadata = {
   description:
     "Frontend developer crafting premium UI with Next.js, React and Tailwind CSS.",
   openGraph: {
+    url: siteUrl,
     title: "Maxim Ionela — Portfolio",
     description:
       "Frontend developer crafting premium UI with Next.js, React and Tailwind CSS.",
@@ -61,6 +62,8 @@ export const metadata: Metadata = {
     images: [
       {
         url: "/preview.png?v=2",
+        secureUrl: "/preview.png?v=2",
+        type: "image/png",
         width: 1200,
         height: 630,
         alt: "Portfolio preview",
